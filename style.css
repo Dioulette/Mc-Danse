@@ -1,66 +1,114 @@
-body{
-    background:linear-gradient(to right, white 15%, #c798a2 100%)
+#bloc_page{
+    width: 900px;
+    margin: 00 auto;
+   
   }
+  @media all and (max-device-width: 480px)
+  {
+      
+      #bloc_page{
+      width: auto;
+      background: white;
+      margin: auto;
+      diplay: block;
+        
+   
+    }
+  }
+  
+  
+  body{
+   background:#FFFAFA;
+  }
+  
   /*Header*/
   #imagehaute{
-  padding: 0;
-  margin: 0;
-  display: block;
-  float:left;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0px;
   width: 100px;
   height: 100px;}
   
   /*Nav*/
-  #navigation li{
-    display: inline;
-   
-  }
   
-  #navigation {
-    margin-top: 23px;
-    padding: 0px;
-    list-style: none;
-    text-align: right;
+  nav{
+  display: inline;
   
   }
+  nav li{
+    display: inline-block;;
+    margin-right: 10px;
+   }
   
-  #navigation li{
-    display: inline;
-    margin-right: 1px;
+   nav ul{
+     list-style-type: none;
+   }
+  
     
+  nav a{
+    font-size: 15 px;
+    color:#cc5897;
+    padding-bottom: 3px;
     border-radius: 10px;
-    padding: 3px 3px 3px 3px;
-    box-shadow: 0px 0px 14px -7px #cc5897;
-    background:linear-gradient(to bottom, #c798a2 5%, #cc5897 100%);
-    background-color: hsla(327, 53%, 57%,1);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-   
-    }
+    text-decoration: none;
+  }
   
-    a:link 
-  { 
-   text-decoration:none; 
-  } 
+  nav a:hover{
+    color: #c798a2;
+    border-bottom: 3px solid #cc5897
+  }
+  
+  
+  /*article*/
   
   article{
+  display: inline-block;
   text-align: center;
-  padding: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: cursive;
+  width: auto;
+  border: 1px solid #cc5897;
+  vertical-align :top;
+  border-radius: 10px;
   
   }
   
-  .histoire{
-    position: relative;
-    top: -150px;
+  /*section*/
+  
+  section{
+    border: 1px solid #c798a2;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    border-radius: 10px;
+      
   }
   
-  #facebook{
-    width: 20px;
-    display: inline;
-    position : absolute;
-    top: 27px;
-    right: 250px;
+  /*Evenements*/ /*Cours*/
+  #cours{
+  width: auto;
+  font-family: cursive;
+  }
+  
+  
+  #cours a{
+    font-size: 15 px;
+    color:#cc5897;
+    padding-bottom: 3px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: cursive;
+  }
+  #cours a:hover{
+    color: #c798a2;
+    border-bottom: 3px solid #cc5897
+    font-family: cursive;
+  }
+  
+  /*Actualites*/
+  #actualite{
+  width: auto;
+  font-family: cursive;
+  text-align: center;
   }
   
   
@@ -68,23 +116,21 @@ body{
   .photo1{
     text-align: center;
     border-radius: 10px;
-    position: relative;
-    top: -150px;
+    float: none;
   }
   
   /*Contact*/
   
   .reseau{
     text-align: center;
-    position: relative;
-    top: -80px;
-   
+    font-family: cursive;
   }
   
   
   /*formulaire*/
   :required{
     background-color: rgba(255, 0, 0, 0.425);
+    font-family: cursive;
   }
   
   
@@ -93,10 +139,10 @@ body{
     margin: 0 auto;
     width: 400px;
     position: relative;
-    top: -40px;
+    top: 50px;
     /* Encadré pour voir les limites du formulaire */
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid #cc5897;
     border-radius: 1em;
   }
   
@@ -114,7 +160,7 @@ body{
   input, textarea {
     /* Pour s'assurer que tous les champs texte ont la même police.
        Par défaut, les textarea ont une police monospace */
-    font: 1em sans-serif;
+    font: 1em cursive;
   
     /* Pour que tous les champs texte aient la même dimension */
     width: 300px;
@@ -145,4 +191,13 @@ body{
     /* Cette marge supplémentaire représente grosso modo le même espace que celui
        entre les étiquettes et les champs texte */
     margin-left: .5em;
+  }
+  
+  /*Evenements*/
+  
+  
+  /*Footer*/
+  footer{
+  text-align: center;
+   
   }
