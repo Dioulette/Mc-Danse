@@ -185,6 +185,7 @@
   .bouton {
     /* Pour placer le bouton à la même position que les champs texte */
     padding-left: 90px; /* même taille que les étiquettes */
+  
   }
   
   bouton {
