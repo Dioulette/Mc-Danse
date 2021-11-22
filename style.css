@@ -3,7 +3,7 @@
     margin: 00 auto;
    
   }
-  @media all and (max-device-width: 480px)
+  @media all and (max-device-width: 480px) and (max-width: 780px)
   {
       
       #bloc_page{
